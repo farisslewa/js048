@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+body {
+	color: #fff;
+	line-height: 1;
+	background-color: black;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	align-items: center;
+	width: 80rem;
+	padding: 0 3rem;
+	margin: 5rem auto;
+}
+h1 {
+	font-size: 4rem;
+}
+.scores {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+p {
+	font-size: 2.4rem;
+}
+.input {
+	height: 3rem;
+	text-align: center;
+	font-size: 1.6rem;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+.againbtn {
+	font-size: 2rem;
+	border-radius: 12px;
+	padding: 1rem 4rem;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+.againbtn:hover {
+	background-color: #bbb;
+}
+.block {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	gap: 4rem;
+}
+.guessedcontainer {
+	grid-column: 1;
+	grid-row: 2/3;
+}
+.message {
+	grid-column: 3;
+	grid-row: 2/3;
+	line-height: 1.4;
+}
+.result {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
